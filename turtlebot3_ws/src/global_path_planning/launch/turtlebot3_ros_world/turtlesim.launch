@@ -1,0 +1,11 @@
+<launch>
+  <!-- Start the turtlesim_node -->
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen">
+    <param name="background_r" value="0"/>
+    <param name="background_g" value="1"/>
+    <param name="background_b" value="1"/>
+  </node>
+
+  <!-- Start the move_turtle_node -->
+  <node pkg="global_path_planning" type="turtlesim.py" name="move_turtle_node" output="screen" />
+</launch>
